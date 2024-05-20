@@ -22,7 +22,7 @@ bot.onText(commandListRegExp, async (msg) => {
 
 bot.on('inline_query', async (query) => {
   const uuids: string[] = []
-  const matches: Command[] = commandList.filter((c) => c.name.toLowerCase().includes(query.query.toLowerCase()))
+  const matches: Command[] = commandList.filter((c) => c.name.toLowerCase().includes(query.query.toLowerCase())).slice(0, 50)
 
   while (uuids.length !== matches.length) {
     const uuid: string = crypto.randomUUID()
