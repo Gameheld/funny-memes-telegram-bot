@@ -1,0 +1,29 @@
+{
+  "name": "funny-memes-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram Bot which has a collection of Gameheld's most used memes for quick access.",
+  "main": "src/bot.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gameheld/funny-memes-telegram-bot.git"
+  },
+  "author": "Gameheld",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Gameheld/funny-memes-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/Gameheld/funny-memes-telegram-bot#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^8.57.0",
+    "globals": "^15.3.0",
+    "typescript-eslint": "^7.9.0"
+  },
+  "dependencies": {
+    "husky": "^9.0.11"
+  }
+}
