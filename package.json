@@ -1,16 +1,17 @@
 {
   "name": "funny-memes-telegram-bot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Telegram Bot which has a collection of Gameheld's most used memes for quick access.",
   "main": "src/bot.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky && node ./generateTelegramCommandList.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gameheld/funny-memes-telegram-bot.git"
   },
+  "type": "module",
   "author": "Gameheld",
   "license": "AGPL-3.0-or-later",
   "bugs": {
@@ -19,11 +20,21 @@
   "homepage": "https://github.com/Gameheld/funny-memes-telegram-bot#readme",
   "devDependencies": {
     "@eslint/js": "^9.3.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.12.12",
+    "@types/node-telegram-bot-api": "^0.64.6",
     "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^17.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
     "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "typescript": "^5.4.5",
     "typescript-eslint": "^7.9.0"
   },
   "dependencies": {
-    "husky": "^9.0.11"
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.65.1"
   }
 }

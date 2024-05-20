@@ -1,11 +1,11 @@
-import pluginJs from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
+import pluginJs from '@eslint/js'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 // Manual standard style until Eslint 8 is supported
-import * as pluginImport from 'eslint-plugin-import';
-import pluginN from 'eslint-plugin-n';
-import pluginPromise from 'eslint-plugin-promise';
+import pluginN from 'eslint-plugin-n'
+import * as pluginImport from 'eslint-plugin-import'
+import pluginPromise from 'eslint-plugin-promise'
 
 export default [
   {
